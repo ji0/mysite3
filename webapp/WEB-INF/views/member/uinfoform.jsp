@@ -12,7 +12,7 @@
 <head>
 <title>mysite</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link href="/mysite/assets/css/user.css" rel="stylesheet"
+<link href="/mysite3/assets/css/user.css" rel="stylesheet"
 	type="text/css">
 </head>
 <body>
@@ -25,8 +25,8 @@
 			<div id="user">
 
 				<form id="uinfo-form" name="uinfoForm" method="post"
-					action="/mysite/member">
-					<input type="hidden" name="a" value="uinfo"> <label
+					action="/mysite3/member/uinfo">
+					<input type="hidden" name="no" value="${authMember.no}"> <label
 						class="block-label" for="name">이름</label> <input id="name"
 						name="name" type="text" value="${authMember.name }"> <label
 						class="block-label" for="email">이메일</label> <input id="email"

@@ -13,7 +13,7 @@
 <head>
 <title>mysite</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link href="/mysite/assets/css/guestbook.css" rel="stylesheet"
+<link href="/mysite3/assets/css/guestbook.css" rel="stylesheet"
 	type="text/css">
 </head>
 <body>
@@ -23,8 +23,8 @@
 		</div>
 		<div id="content">
 			<div id="guestbook">
-				<form action="/mysite/guestbook" method="post">
-					<input type="hidden" name="a" value="insert">
+				<form action="/mysite3/guestbook/insert" method="post">
+					
 
 					<table>
 						<tr>
@@ -49,7 +49,7 @@
 								<td>${vo.reg_date}</td>
 
 
-								<td><a href="/mysite/guestbook?a=deleteform&no=${vo.no}">삭제</a></td>
+								<td><a href="/mysite3/guestbook/delete?no=${vo.no}">삭제</a></td>
 
 								</tr>
 								<tr>

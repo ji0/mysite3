@@ -5,17 +5,17 @@
 <head>
 <title>mysite</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link href="/mysite/assets/css/board.css" rel="stylesheet" type="text/css">
+<link href="/mysite3/assets/css/board.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<c:import url="/views/include/header.jsp" />
+			<c:import url="/WEB-INF/views/include/header.jsp" />
 		</div>
 		<div id="content">
 			<div id="board">
-				<form class="board-form" method="post" action="/mysite/board">
-					<input type="hidden" name="a" value="modify"> 
+				<form class="board-form" method="post" action="/mysite3/board/modify">
+					
 					<input type="hidden" name="no" value="${list.no}"> 
 					
 					<table class="tbl-ex">
@@ -34,17 +34,17 @@
 						</tr>
 					</table>
 					<div class="bottom">
-						<a href="/mysite/board?a=view&no=${list.no}">취소</a>
+						<a href="/mysite3/board/view?no=${list.no}">취소</a>
 						<input type="submit" value="수정">
 					</div>
 				</form>				
 			</div>
 		</div>
 		<div id="navigation">
-			<c:import url="/views/include/navigation_board.jsp" />
+			<c:import url="/WEB-INF/views/include/navigation_board.jsp" />
 		</div>
 		<div id="footer">
-			<c:import url="/views/include/footer.jsp" />
+			<c:import url="/WEB-INF/views/include/footer.jsp" />
 		</div>
 	</div>
 </body>

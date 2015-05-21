@@ -21,8 +21,6 @@ public class MemberService {
 		
 		 MemberVO vo2 = memberDao.getMember(vo);
 		 return vo2;
-		
-		
 	}
 	
 }
